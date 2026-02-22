@@ -1,0 +1,16 @@
+name: CombatLock
+version: 1.0
+main: me.magicsebs.combatLock.CombatLock
+api-version: 1.21
+author: MagicSebs
+description: >
+  CombatLock is a fully configurable combat tagging plugin.
+  Players cannot use commands in combat, logouts are punished, 
+  and combat timers are displayed in the action bar.
+
+# Not added yet
+commands:
+  combatlock:
+    description: Reloads CombatLock configuration
+    usage: /<command>
+    permission: combatlock.reload

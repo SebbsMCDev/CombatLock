@@ -1,0 +1,72 @@
+# ==================================================
+# CombatLock Messages
+# ==================================================
+# Plugin by: MagicSebs
+# Discord: magic_sebs_
+# Discord Sever Link: https://discord.gg/r6xpFzvKUq
+# GitHub: https://github.com/MagicSebs
+# Version: 1.0
+# Description: All customizable messages for CombatLock plugin
+# ==================================================
+
+# ------------------------
+# Combat Messages
+# ------------------------
+combat:
+  # Message shown when a player enters combat
+  start: "&cYou are now in combat!"
+
+  # Message shown when a player leaves combat
+  end: "&aYou are no longer in combat."
+
+  # Message displayed in action bar (dynamic, shows remaining seconds)
+  actionbar: "&cIn Combat: %time%s"
+
+  # Message shown when combat timer resets (hitting a player again)
+  reset: "&eYour combat timer has been reset!"
+
+# ------------------------
+# Command Blocking Messages
+# ------------------------
+commands:
+  # Message shown when a player tries to use a blocked command
+  blocked: "&cYou cannot use commands while in combat!"
+
+  # Optional message if a command is allowed
+  allowed_notice: "&aThis command is allowed during combat."
+
+# ------------------------
+# Logout / Punishment Messages
+# ------------------------
+logout:
+  # Message when a player dies from logging out during combat
+  death: "&c%player% logged out while in combat and died!"
+
+  # Broadcast message to all players when someone is punished for logging out
+  death_broadcast: "&c%player% tried to escape combat and was punished!"
+
+  # Optional notice sent to player attempting to logout
+  notice: "&eLogging out during combat is not allowed!"
+
+# ------------------------
+# Visual & Audio Effects Messages
+# ------------------------
+effects:
+  # Sound played when a player enters combat
+  hit_sound: "ENTITY_PLAYER_HURT"
+
+  # Sound played when a player dies from logout punishment
+  logout_sound: "ENTITY_WITHER_SPAWN"
+
+  # Optional titles shown to players when entering combat
+  title:
+    enabled: false
+    title: "&cIn Combat!"
+    subtitle: "&7Do not log out or use commands!"
+
+# ------------------------
+# Placeholder Reference
+# ------------------------
+placeholders:
+# %time% → remaining seconds in combat
+# %player% → player name

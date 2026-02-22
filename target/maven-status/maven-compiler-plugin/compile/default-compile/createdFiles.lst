@@ -1,0 +1,14 @@
+me\magicsebs\combatLock\config\MessageManager.class
+me\magicsebs\combatLock\combat\CombatSession.class
+me\magicsebs\combatLock\combat\CombatSettings.class
+me\magicsebs\combatLock\listener\CommandListener.class
+me\magicsebs\combatLock\listener\QuitListener.class
+me\magicsebs\combatLock\listener\DamageListener.class
+me\magicsebs\combatLock\util\TextUtil.class
+me\magicsebs\combatLock\listener\DeathListener.class
+me\magicsebs\combatLock\util\PermissionUtil.class
+me\magicsebs\combatLock\util\ActionBarUtil.class
+me\magicsebs\combatLock\combat\CombatManager.class
+me\magicsebs\combatLock\task\CombatTask.class
+me\magicsebs\combatLock\CombatLock.class
+me\magicsebs\combatLock\config\ConfigManager.class

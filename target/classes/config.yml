@@ -1,0 +1,103 @@
+# ==================================================
+# CombatLock Configuration
+# ==================================================
+# Plugin by: MagicSebs
+# Discord: magic_sebs_
+# Discord Server Link: https://discord.gg/r6xpFzvKUq
+# GitHub: https://github.com/MagicSebs
+# Version: 1.0
+# Description: Fully configurable combat tagging plugin.
+# ==================================================
+
+# ------------------------
+# Combat Settings
+# ------------------------
+combat:
+  # Duration of combat in seconds
+  # After this time passes without taking or dealing damage, the player is no longer in combat
+  duration: 20
+
+  # Whether combat resets on hitting another player
+  # If true, hitting another player will reset your combat timer to 'duration'
+  reset_on_hit: true
+
+  # Whether combat applies to all players, including those with bypass permission
+  apply_to_bypass: false
+
+# ------------------------
+# Command Blocking
+# ------------------------
+commands:
+  # Block all commands while in combat?
+  block_all: true
+
+  # List of commands that are allowed during combat
+  # Commands must be in lowercase without the "/"
+  allowed_commands:
+    - msg
+    - tell
+    - reply
+    - spawn
+
+# ------------------------
+# Logout Punishment
+# ------------------------
+logout:
+  # Kill player instantly if they logout during combat
+  kill_on_logout: true
+
+  # Broadcast a message to all players when someone dies due to combat logout
+  broadcast_message: "&c%player% tried to escape combat and was punished!"
+
+# ------------------------
+# Action Bar Settings
+# ------------------------
+actionbar:
+  # Enable showing remaining combat time in action bar
+  enabled: true
+
+  # Format of the action bar message
+  # %time% will be replaced with remaining seconds
+  format: "&cIn Combat: %time%s"
+
+  # Update interval in seconds
+  interval: 1
+
+# ------------------------
+# Messages
+# ------------------------
+messages:
+  # Message shown when a player enters combat
+  combat_start: "&cYou are now in combat!"
+
+  # Message shown when a player leaves combat
+  combat_end: "&aYou are no longer in combat."
+
+  # Message shown when a player tries to use a blocked command
+  no_commands: "&cYou cannot use commands while in combat!"
+
+  # Message when combat timer is reset due to hitting another player
+  reset: "&eYour combat timer has been reset!"
+
+# ------------------------
+# Effects (Optional)
+# ------------------------
+effects:
+  # Sound played when a player enters combat
+  hit_sound: "ENTITY_PLAYER_HURT"
+
+  # Sound played when a player dies due to logout while in combat
+  logout_sound: "ENTITY_WITHER_SPAWN"
+
+  # Optional titles shown to players when they enter combat
+  title:
+    enabled: false
+    title: "&cIn Combat!"
+    subtitle: "&7Do not log out or use commands!"
+
+# ------------------------
+# Placeholders Reference
+# ------------------------
+placeholders:
+# %time%  → remaining seconds of combat
+# %player% → player name
