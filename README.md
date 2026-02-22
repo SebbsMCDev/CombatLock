@@ -17,5 +17,6 @@
 
 ## Contact
 - Author: MagicSebs
-- Discord: MagicSebs#0001
+- Discord: magic_sebs_
+- Discord Server Link: https://discord.gg/r6xpFzvKUq
 - GitHub: https://github.com/MagicSebs
